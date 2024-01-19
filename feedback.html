@@ -1,0 +1,180 @@
+<html>
+<head>
+<title>registration form</title>
+<style>
+.main
+{
+width:100%;
+height:750px;
+background-color:white;
+  background-image: url("001.png") ;
+  width: 100%;
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-size: 120%;
+}
+
+.row1
+{
+height:60px;
+width:100%;
+background-color:#f1f1f1;
+font-size:20px;
+
+
+}
+
+.row1-col1
+{
+height:60px;
+margin-left:10px;
+}
+
+
+#ab{float:right;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration:bold;
+  font-size: 15px;
+}
+.topnav input[type=text] {
+  float: right;
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 15px;
+}
+
+
+.topnav {
+  background-color:#e9e9e9;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration:bold;
+  font-size: 20px;
+  margin-left:150px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the "active" element to highlight the current page */
+.topnav a.active {
+  background-color: #2196F3;
+  color: white;
+}
+
+.row2
+{
+height:48px;
+width:100%;
+background-color:red;
+}
+
+h1
+{
+text-align:center;
+}
+
+.content {
+  max-width:  800px;
+  
+  margin: 50px auto 0 auto;
+  background-image: url("iamges/5.JPG");
+  padding: 13px;
+  border:3px solid black
+  
+  
+}
+form
+{
+font-size:20px;
+font-weight: bold;
+}
+
+
+   
+</style>
+
+ <script>
+
+function validateform()
+{
+
+var name=document.getElementById("First Name");
+alert("Submitted succesfully");
+
+}
+</script>
+
+
+<body>
+<div class ="main">
+	<div class="row1">
+		<div class= "row1-col1">	
+		<img align="left" src="logo.png" width="400" height="60" >
+
+		<div class="topnav">
+  		<input type="text" placeholder="Search.."></div>
+		<a id="ab" href="loginsucess.html" target="_blank">Login</a>
+		</div>
+	<div class=row2">
+
+	<div class="topnav">
+  		<a class="active" href="web.html">Home</a>
+  		<a href="about.html">About</a>
+		<a href="gallery.html">Gallery</a>
+		<a href="courses.html">Couses</a>
+ 		 <a href="cont.html">Contact</a></div>
+		
+  		 
+	</div>
+		<div class="row2"></div>
+  
+<div class="content">
+<img align="left" src="0001.png" width="90" height="80" >
+  <h1 style="color:red;" >Feedback Form</h1>
+	<hr border-"10" background-color="black">
+    <form id="post" onsubmit="validateform()" >
+	
+	<label>First Name:</label><input type="text" placeholder="Enter first name "name="fname"/><br><br>
+	
+	<label>Middle Name:</label><input type="text" placeholder="Enter middle name "name="mname"/><br><br>
+	
+	<label>Last Name:</label><input type="text"placeholder="Enter last name " name="lname"/><br><br>
+	
+	<label>Email:</label><input type="Email" placeholder="Enter Email" name="email"/><br><br>
+	<label>Your Age:</label><input type="number" placeholder="what is your age now?" name="number"/><br><br>
+	
+	<label>Mobile No:</label><input type="number" placeholder="Enter your mobile no." name="number"/><br><br>
+	Description:</br>
+<textarea rows="5" cols="50" name="text">
+Enter description hear...
+</textarea><br>
+
+
+            <div style="text-align:center">
+                <button>Submit</button>
+              </div>
+
+  
+</div>
+
+</form>
+</div>
+
+</body>
+</head>
+<html>
